@@ -9,7 +9,7 @@ import path from 'path';
 const app = express();
 app.use(cors());
 
-// serve downloaded media images
+
 app.use('/media', express.static(path.join(process.cwd(), 'src', 'utils', 'images')));
 
 app.use(express.json());
